@@ -1,0 +1,7 @@
+<launch>
+	<node pkg="cv_camera" type="cv_camera_node" name="cv_camera">
+		<param name="image_height" value="320"/>
+		<param name="image_width" value="320"/>
+	</node>
+	<node pkg="robocar" type="follower_p.py" name="follower"/>
+</launch>
